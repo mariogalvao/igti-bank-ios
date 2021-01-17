@@ -12,6 +12,8 @@
 		D5CE8BA725B4D43B0041CAAF /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CE8BA525B4D43B0041CAAF /* CardCollectionViewCell.swift */; };
 		D5CE8BA825B4D43B0041CAAF /* CardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5CE8BA625B4D43B0041CAAF /* CardCollectionViewCell.xib */; };
 		D5CE8BB025B4E9BB0041CAAF /* APICards.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CE8BAF25B4E9BB0041CAAF /* APICards.swift */; };
+		D5CE8BC525B4F2120041CAAF /* CardInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CE8BC325B4F2120041CAAF /* CardInfoTableViewCell.swift */; };
+		D5CE8BC625B4F2120041CAAF /* CardInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5CE8BC425B4F2120041CAAF /* CardInfoTableViewCell.xib */; };
 		D5F040BC25B480B1001A41DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F040BB25B480B1001A41DF /* AppDelegate.swift */; };
 		D5F040BE25B480B1001A41DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F040BD25B480B1001A41DF /* SceneDelegate.swift */; };
 		D5F040C025B480B1001A41DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F040BF25B480B1001A41DF /* ViewController.swift */; };
@@ -76,6 +78,8 @@
 		D5CE8BA525B4D43B0041CAAF /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
 		D5CE8BA625B4D43B0041CAAF /* CardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCollectionViewCell.xib; sourceTree = "<group>"; };
 		D5CE8BAF25B4E9BB0041CAAF /* APICards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICards.swift; sourceTree = "<group>"; };
+		D5CE8BC325B4F2120041CAAF /* CardInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardInfoTableViewCell.swift; sourceTree = "<group>"; };
+		D5CE8BC425B4F2120041CAAF /* CardInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardInfoTableViewCell.xib; sourceTree = "<group>"; };
 		D5F040B825B480B1001A41DF /* IGTIBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IGTIBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5F040BB25B480B1001A41DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5F040BD25B480B1001A41DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -177,6 +181,15 @@
 				D5CE8BA625B4D43B0041CAAF /* CardCollectionViewCell.xib */,
 			);
 			path = Card;
+			sourceTree = "<group>";
+		};
+		D5CE8BC225B4F1FE0041CAAF /* CardInfo */ = {
+			isa = PBXGroup;
+			children = (
+				D5CE8BC325B4F2120041CAAF /* CardInfoTableViewCell.swift */,
+				D5CE8BC425B4F2120041CAAF /* CardInfoTableViewCell.xib */,
+			);
+			path = CardInfo;
 			sourceTree = "<group>";
 		};
 		D5F040AF25B480B1001A41DF = {
@@ -321,6 +334,7 @@
 				D5F0416725B4AE1E001A41DF /* Balance */,
 				D5F0416625B4AE14001A41DF /* Item */,
 				D5CE8BA425B4D3FF0041CAAF /* Card */,
+				D5CE8BC225B4F1FE0041CAAF /* CardInfo */,
 			);
 			path = cells;
 			sourceTree = "<group>";
@@ -482,6 +496,7 @@
 			files = (
 				D5F0415F25B4A191001A41DF /* ItemTableViewCell.xib in Resources */,
 				D5F040C825B480B3001A41DF /* LaunchScreen.storyboard in Resources */,
+				D5CE8BC625B4F2120041CAAF /* CardInfoTableViewCell.xib in Resources */,
 				D5F0417D25B4BFC2001A41DF /* ComingSoonViewController.xib in Resources */,
 				D5F040C525B480B3001A41DF /* Assets.xcassets in Resources */,
 				D5CE8BA825B4D43B0041CAAF /* CardCollectionViewCell.xib in Resources */,
@@ -628,6 +643,7 @@
 				D5F0419F25B4D093001A41DF /* CardsCoordinator.swift in Sources */,
 				D5F0417B25B4BFC2001A41DF /* ComingSoonViewController.swift in Sources */,
 				D5F0410A25B4824F001A41DF /* AccountHomeViewModel.swift in Sources */,
+				D5CE8BC525B4F2120041CAAF /* CardInfoTableViewCell.swift in Sources */,
 				D5CE8BA725B4D43B0041CAAF /* CardCollectionViewCell.swift in Sources */,
 				D5F041A125B4D093001A41DF /* CardsHomeViewModel.swift in Sources */,
 				D5F0416A25B4AE2E001A41DF /* BalanceTableViewCell.swift in Sources */,

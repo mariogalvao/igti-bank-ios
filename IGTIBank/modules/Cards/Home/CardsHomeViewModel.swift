@@ -28,6 +28,7 @@ protocol CardsHomeViewModelProtocol: ViewModelProtocol {
     func getCards()
     func getNumberOfCards() -> Int
     func selectItem(for menu: Menu)
+    func getCard(for row: Int) -> Card?
     
 }
 
@@ -51,6 +52,14 @@ extension CardsHomeViewModel: CardsHomeViewModelProtocol {
     
     func selectItem(for menu: Menu) {
         coordinatorDelegate.itemSelected(for: menu)
+    }
+    
+    func getCard(for row: Int) -> Card? {
+        if cards.count > row {
+            return cards[row]
+        } else {
+            return nil
+        }
     }
     
 }

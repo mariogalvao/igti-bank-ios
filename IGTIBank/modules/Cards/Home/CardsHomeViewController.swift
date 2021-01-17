@@ -26,6 +26,7 @@ class CardsHomeViewController: ViewController {
         collectionView.register(UINib(nibName: "CardCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "CardCollectionViewCell")
         
         tableView.menuDelegate = self
+        tableView.register(UINib(nibName: "CardInfoTableViewCell", bundle: nil), forCellReuseIdentifier: "CardInfoTableViewCell")
         
         setViewsVisible(false)
     }
@@ -104,7 +105,15 @@ extension CardsHomeViewController: UIScrollViewDelegate {
 extension CardsHomeViewController: MenuTableViewProtocol {
     
     func getCustomCellForRowAt(_ tableView: UITableView, indexPath: IndexPath) -> UITableViewCell? {
-        return nil
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "CardInfoTableViewCell", for: indexPath) as? CardInfoTableViewCell else {
+            return UITableViewCell()
+        }
+        guard let card = viewModelDelegate?.getCard(for: pageControl.currentPage) else { return nil }
+        cell.cardLabel.text = card.name
+        cell.spentLabel.text = card.spentString
+        cell.availableLabel.text = card.availableString
+        cell.setLimits(spentValue: card.spentValue, availableValue: card.availableValue)
+        return cell
     }
     
     func didSelect(menu: Menu) {
