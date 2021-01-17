@@ -12,12 +12,17 @@ class TabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        viewControllers = [account()]
+        viewControllers = [account(), cards()]
     }
     
     private func account() -> NavigationController {
-        let accountCoordinator = AccountCoordinator()
-        return accountCoordinator.firstViewController()
+        let coordinator = AccountCoordinator()
+        return coordinator.firstViewController()
+    }
+    
+    private func cards() -> NavigationController {
+        let coordinator = CardsCoordinator()
+        return coordinator.firstViewController()
     }
     
 }

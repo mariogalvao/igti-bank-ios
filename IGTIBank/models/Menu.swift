@@ -49,6 +49,23 @@ class Menu: NSObject {
                                         details: "Consulte, cadastre e cancele contas em débito automático."))
         return transactions
     }
+    
+    static func getCardMenus() -> [Menu] {
+        var transactions: [Menu] = []
+        transactions.append(Menu(type: .invoice,
+                                        icon: UIImage(systemName: "list.bullet.rectangle"),
+                                        title: "Faturas",
+                                        details: "Veja todos os seus lançamentos."))
+        transactions.append(Menu(type: .limits,
+                                        icon: UIImage(systemName: "arrow.left.arrow.right.square"),
+                                        title: "Alterar limite",
+                                        details: "Altere o limite do seu cartão."))
+        transactions.append(Menu(type: .block,
+                                        icon: UIImage(systemName: "lock.square"),
+                                        title: "Bloquear",
+                                        details: "Em caso de perda ou roubo, faça o bloqueio do seu cartão."))
+        return transactions
+    }
 
 }
 

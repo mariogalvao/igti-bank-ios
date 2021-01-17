@@ -40,6 +40,15 @@ class MenuSection {
         }
         complete()
     }
+    
+    static func getCardsMenuSectionList() -> [MenuSection] {
+        let customSection = MenuSection(sectionTitle: "Dados do cartão",
+                                        type: .customCell)
+        let menuSection = MenuSection(sectionTitle: "Menu",
+                                      type: .menu,
+                                      menus: Menu.getCardMenus())
+        return [customSection, menuSection]
+    }
 
 }
 

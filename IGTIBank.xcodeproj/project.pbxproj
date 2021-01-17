@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		BCED6F8D71572C7AAD3B0852 /* Pods_IGTIBankTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F879C85E47A1145D7AD081A /* Pods_IGTIBankTests.framework */; };
 		D03CC9B879FB2F757F9A900F /* Pods_IGTIBank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BEF6A3E5041DF693269F47D /* Pods_IGTIBank.framework */; };
+		D5CE8BA725B4D43B0041CAAF /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CE8BA525B4D43B0041CAAF /* CardCollectionViewCell.swift */; };
+		D5CE8BA825B4D43B0041CAAF /* CardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5CE8BA625B4D43B0041CAAF /* CardCollectionViewCell.xib */; };
+		D5CE8BB025B4E9BB0041CAAF /* APICards.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CE8BAF25B4E9BB0041CAAF /* APICards.swift */; };
 		D5F040BC25B480B1001A41DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F040BB25B480B1001A41DF /* AppDelegate.swift */; };
 		D5F040BE25B480B1001A41DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F040BD25B480B1001A41DF /* SceneDelegate.swift */; };
 		D5F040C025B480B1001A41DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F040BF25B480B1001A41DF /* ViewController.swift */; };
@@ -38,6 +41,10 @@
 		D5F0417B25B4BFC2001A41DF /* ComingSoonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F0417825B4BFC2001A41DF /* ComingSoonViewController.swift */; };
 		D5F0417C25B4BFC2001A41DF /* ComingSoonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F0417925B4BFC2001A41DF /* ComingSoonViewModel.swift */; };
 		D5F0417D25B4BFC2001A41DF /* ComingSoonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5F0417A25B4BFC2001A41DF /* ComingSoonViewController.xib */; };
+		D5F0419F25B4D093001A41DF /* CardsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F0419B25B4D093001A41DF /* CardsCoordinator.swift */; };
+		D5F041A025B4D093001A41DF /* CardsHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F0419C25B4D093001A41DF /* CardsHomeViewController.swift */; };
+		D5F041A125B4D093001A41DF /* CardsHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F0419D25B4D093001A41DF /* CardsHomeViewModel.swift */; };
+		D5F041A225B4D093001A41DF /* CardsHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5F0419E25B4D093001A41DF /* CardsHomeViewController.xib */; };
 		D87414F26190E00142ABB5D3 /* Pods_IGTIBank_IGTIBankUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 800CB6C498C4C2C2A3A1B421 /* Pods_IGTIBank_IGTIBankUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +73,9 @@
 		5AC4D8B3B7AE49D41B4410B5 /* Pods-IGTIBank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGTIBank.release.xcconfig"; path = "Target Support Files/Pods-IGTIBank/Pods-IGTIBank.release.xcconfig"; sourceTree = "<group>"; };
 		800CB6C498C4C2C2A3A1B421 /* Pods_IGTIBank_IGTIBankUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IGTIBank_IGTIBankUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8805F492B1BE916223EFCF94 /* Pods-IGTIBankTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGTIBankTests.release.xcconfig"; path = "Target Support Files/Pods-IGTIBankTests/Pods-IGTIBankTests.release.xcconfig"; sourceTree = "<group>"; };
+		D5CE8BA525B4D43B0041CAAF /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
+		D5CE8BA625B4D43B0041CAAF /* CardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCollectionViewCell.xib; sourceTree = "<group>"; };
+		D5CE8BAF25B4E9BB0041CAAF /* APICards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICards.swift; sourceTree = "<group>"; };
 		D5F040B825B480B1001A41DF /* IGTIBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IGTIBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5F040BB25B480B1001A41DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5F040BD25B480B1001A41DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +111,10 @@
 		D5F0417825B4BFC2001A41DF /* ComingSoonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingSoonViewController.swift; sourceTree = "<group>"; };
 		D5F0417925B4BFC2001A41DF /* ComingSoonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingSoonViewModel.swift; sourceTree = "<group>"; };
 		D5F0417A25B4BFC2001A41DF /* ComingSoonViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComingSoonViewController.xib; sourceTree = "<group>"; };
+		D5F0419B25B4D093001A41DF /* CardsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsCoordinator.swift; sourceTree = "<group>"; };
+		D5F0419C25B4D093001A41DF /* CardsHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsHomeViewController.swift; sourceTree = "<group>"; };
+		D5F0419D25B4D093001A41DF /* CardsHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsHomeViewModel.swift; sourceTree = "<group>"; };
+		D5F0419E25B4D093001A41DF /* CardsHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardsHomeViewController.xib; sourceTree = "<group>"; };
 		E8C4163F446E5E9F09283F1B /* Pods-IGTIBankTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGTIBankTests.debug.xcconfig"; path = "Target Support Files/Pods-IGTIBankTests/Pods-IGTIBankTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F827EF8EB1D613222AF6C165 /* Pods-IGTIBank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGTIBank.debug.xcconfig"; path = "Target Support Files/Pods-IGTIBank/Pods-IGTIBank.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -154,6 +168,15 @@
 				8805F492B1BE916223EFCF94 /* Pods-IGTIBankTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		D5CE8BA425B4D3FF0041CAAF /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				D5CE8BA525B4D43B0041CAAF /* CardCollectionViewCell.swift */,
+				D5CE8BA625B4D43B0041CAAF /* CardCollectionViewCell.xib */,
+			);
+			path = Card;
 			sourceTree = "<group>";
 		};
 		D5F040AF25B480B1001A41DF = {
@@ -230,6 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				D5F0410225B481EB001A41DF /* Account */,
+				D5F0419A25B4D06D001A41DF /* Cards */,
 			);
 			path = modules;
 			sourceTree = "<group>";
@@ -259,6 +283,7 @@
 				D5F0413A25B48C20001A41DF /* API.swift */,
 				D5F0414425B48CF8001A41DF /* APIError.swift */,
 				D5F0413F25B48C40001A41DF /* APIAccount.swift */,
+				D5CE8BAF25B4E9BB0041CAAF /* APICards.swift */,
 			);
 			path = api;
 			sourceTree = "<group>";
@@ -295,6 +320,7 @@
 			children = (
 				D5F0416725B4AE1E001A41DF /* Balance */,
 				D5F0416625B4AE14001A41DF /* Item */,
+				D5CE8BA425B4D3FF0041CAAF /* Card */,
 			);
 			path = cells;
 			sourceTree = "<group>";
@@ -325,6 +351,25 @@
 				D5F0417A25B4BFC2001A41DF /* ComingSoonViewController.xib */,
 			);
 			path = viewControllers;
+			sourceTree = "<group>";
+		};
+		D5F0419A25B4D06D001A41DF /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				D5F0419B25B4D093001A41DF /* CardsCoordinator.swift */,
+				D5F041A625B4D09A001A41DF /* Home */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		D5F041A625B4D09A001A41DF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D5F0419C25B4D093001A41DF /* CardsHomeViewController.swift */,
+				D5F0419D25B4D093001A41DF /* CardsHomeViewModel.swift */,
+				D5F0419E25B4D093001A41DF /* CardsHomeViewController.xib */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -439,6 +484,8 @@
 				D5F040C825B480B3001A41DF /* LaunchScreen.storyboard in Resources */,
 				D5F0417D25B4BFC2001A41DF /* ComingSoonViewController.xib in Resources */,
 				D5F040C525B480B3001A41DF /* Assets.xcassets in Resources */,
+				D5CE8BA825B4D43B0041CAAF /* CardCollectionViewCell.xib in Resources */,
+				D5F041A225B4D093001A41DF /* CardsHomeViewController.xib in Resources */,
 				D5F0416B25B4AE2E001A41DF /* BalanceTableViewCell.xib in Resources */,
 				D5F0410B25B4824F001A41DF /* AccountHomeViewController.xib in Resources */,
 			);
@@ -571,14 +618,18 @@
 				D5F0413B25B48C20001A41DF /* API.swift in Sources */,
 				D5F040C025B480B1001A41DF /* ViewController.swift in Sources */,
 				D5F0417325B4BDAA001A41DF /* SearchController.swift in Sources */,
+				D5F041A025B4D093001A41DF /* CardsHomeViewController.swift in Sources */,
 				D5F0410925B4824F001A41DF /* AccountHomeViewController.swift in Sources */,
 				D5F0410825B4824F001A41DF /* AccountCoordinator.swift in Sources */,
 				D5F0417C25B4BFC2001A41DF /* ComingSoonViewModel.swift in Sources */,
 				D5F0414C25B49DF3001A41DF /* MenuTableView.swift in Sources */,
 				D5F0412525B4847E001A41DF /* TabBarController.swift in Sources */,
 				D5F0415725B4A075001A41DF /* MenuSection.swift in Sources */,
+				D5F0419F25B4D093001A41DF /* CardsCoordinator.swift in Sources */,
 				D5F0417B25B4BFC2001A41DF /* ComingSoonViewController.swift in Sources */,
 				D5F0410A25B4824F001A41DF /* AccountHomeViewModel.swift in Sources */,
+				D5CE8BA725B4D43B0041CAAF /* CardCollectionViewCell.swift in Sources */,
+				D5F041A125B4D093001A41DF /* CardsHomeViewModel.swift in Sources */,
 				D5F0416A25B4AE2E001A41DF /* BalanceTableViewCell.swift in Sources */,
 				D5F0414025B48C40001A41DF /* APIAccount.swift in Sources */,
 				D5F0412025B483CC001A41DF /* NavigationController.swift in Sources */,
@@ -588,6 +639,7 @@
 				D5F0411B25B48322001A41DF /* ViewModel.swift in Sources */,
 				D5F0411325B482AD001A41DF /* Coordinator.swift in Sources */,
 				D5F0415E25B4A191001A41DF /* ItemTableViewCell.swift in Sources */,
+				D5CE8BB025B4E9BB0041CAAF /* APICards.swift in Sources */,
 				D5F0414525B48CF8001A41DF /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
