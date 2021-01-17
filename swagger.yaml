@@ -1,0 +1,256 @@
+swagger: "2.0"
+info:
+  description: "This is a sample server Bank server."
+  version: "1.0.0"
+  title: "Swagger Bank"
+  termsOfService: "http://openmindhouse.com/terms"
+  contact:
+    email: "mario.galvao@openmindhouse.com"
+  license:
+    name: "Apache 2.0"
+    url: "http://www.apache.org/licenses/LICENSE-2.0.html"
+host: "demo7257567.mockable.io"
+basePath: "/v1"
+tags:
+- name: "Account"
+  description: ""
+- name: "Cards"
+  description: ""
+- name: "Investments"
+  description: ""
+schemes:
+- "http"
+paths:
+  /myBalance:
+    get:
+      tags:
+        - "Account"
+      summary: "My Balance"
+      description: "Get current user balance"
+      operationId: "getMyBalance"
+      consumes:
+      - "application/json"
+      - "application/xml"
+      produces:
+      - "application/xml"
+      - "application/json"
+      responses:
+        "200":
+          description: "successful operation"
+          schema:
+            $ref: '#/definitions/Balance'
+        "405":
+          description: "Invalid input"
+  /myInfo:
+    get:
+      tags:
+        - "Account"
+      summary: "My Profile and Account Information"
+      description: "Get current user information"
+      operationId: "getMyInfo"
+      consumes:
+      - "application/json"
+      - "application/xml"
+      produces:
+      - "application/xml"
+      - "application/json"
+      responses:
+        "200":
+          description: "successful operation"
+          schema:
+            $ref: '#/definitions/MyInfo'
+        "405":
+          description: "Invalid input"
+  /myCards:
+    get:
+      tags:
+        - "Cards"
+      summary: "My Cards"
+      description: "Get current user cards information"
+      operationId: "getMyCards"
+      consumes:
+      - "application/json"
+      - "application/xml"
+      produces:
+      - "application/xml"
+      - "application/json"
+      responses:
+        "200":
+          description: "successful operation"
+          schema:
+            type: "array"
+            items:
+              $ref: '#/definitions/Card'
+        "405":
+          description: "Invalid input"
+  /myInvestments:
+    get:
+      tags:
+        - "Investments"
+      summary: "My Investments"
+      description: "Get current user investment information"
+      operationId: "getMyInvestments"
+      consumes:
+      - "application/json"
+      - "application/xml"
+      produces:
+      - "application/xml"
+      - "application/json"
+      responses:
+        "200":
+          description: "successful operation"
+          schema:
+            $ref: '#/definitions/MyInvestments'
+        "405":
+          description: "Invalid input"
+  /investments:
+    get:
+      tags:
+        - "Investments"
+      summary: "Investments"
+      description: "Get current investments available"
+      operationId: "getInvestments"
+      consumes:
+      - "application/json"
+      - "application/xml"
+      produces:
+      - "application/xml"
+      - "application/json"
+      responses:
+        "200":
+          description: "successful operation"
+          schema:
+            type: "array"
+            items:
+              $ref: '#/definitions/Investment'
+        "405":
+          description: "Invalid input"
+definitions:
+  Balance:
+    type: "object"
+    properties:
+      balanceString:
+        type: "string"
+      balanceValue:
+        type: "number"
+        format: "double"
+    required:
+      - balanceString
+      - balanceValue
+  MyInfo:
+    type: "object"
+    properties:
+      name:
+        type: "string"
+      email:
+        type: "string"
+      cpf:
+        type: "string"
+      phone:
+        type: "string"
+      bank:
+        type: "string"
+      agency:
+        type: "string"
+      account:
+        type: "string"
+    required:
+      - name
+      - email
+      - cpf
+      - phone
+      - bank
+      - agency
+      - account
+  Card:
+    type: "object"
+    properties:
+      id:
+        type: "integer"
+        format: "int64"
+      name:
+        type: "string"
+      spentString:
+        type: "string"
+      spentValue:
+        type: "number"
+        format: "double"
+      availableString:
+        type: "string"
+      availableValue:
+        type: "number"
+        format: "double"
+    required:
+      - id
+      - name
+      - spentString
+      - spentValue
+      - availableString
+      - availableValue
+  MyInvestments:
+    type: "object"
+    properties:
+      balance:
+        type: "string"
+      investments:
+        type: "array"
+        items:
+          $ref: '#/definitions/MyInvestment'
+    required:
+      - balance
+      - investments
+  MyInvestment:
+    type: "object"
+    properties:
+      id:
+        type: "integer"
+        format: "int64"
+      name:
+        type: "string"
+      balanceString:
+        type: "string"
+      balanceValue:
+        type: "number"
+        format: "double"
+      iOSImage:
+        type: "string"
+    required:
+      - id
+      - name
+      - balanceString
+      - balanceValue
+      - iOSImage
+  Investment:
+    type: "object"
+    properties:
+      id:
+        type: "integer"
+        format: "int64"
+      name:
+        type: "string"
+      description:
+        type: "string"
+      iOSImage:
+        type: "string"
+    required:
+      - id
+      - name
+      - description
+      - iOSImage
+  ErrorResponse:
+    type: "object"
+    properties:
+      code:
+        type: "integer"
+        format: "int32"
+      title:
+        type: "string"
+      message:
+        type: "string"
+    required:
+      - code
+      - title
+      - message
+externalDocs:
+  description: "Find out more"
+  url: "http://openmindhouse.com"

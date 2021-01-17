@@ -1,0 +1,924 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BCED6F8D71572C7AAD3B0852 /* Pods_IGTIBankTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F879C85E47A1145D7AD081A /* Pods_IGTIBankTests.framework */; };
+		D03CC9B879FB2F757F9A900F /* Pods_IGTIBank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BEF6A3E5041DF693269F47D /* Pods_IGTIBank.framework */; };
+		D5F040BC25B480B1001A41DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F040BB25B480B1001A41DF /* AppDelegate.swift */; };
+		D5F040BE25B480B1001A41DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F040BD25B480B1001A41DF /* SceneDelegate.swift */; };
+		D5F040C025B480B1001A41DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F040BF25B480B1001A41DF /* ViewController.swift */; };
+		D5F040C525B480B3001A41DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5F040C425B480B3001A41DF /* Assets.xcassets */; };
+		D5F040C825B480B3001A41DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5F040C625B480B3001A41DF /* LaunchScreen.storyboard */; };
+		D5F040D325B480B3001A41DF /* IGTIBankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F040D225B480B3001A41DF /* IGTIBankTests.swift */; };
+		D5F040DE25B480B3001A41DF /* IGTIBankUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F040DD25B480B3001A41DF /* IGTIBankUITests.swift */; };
+		D5F0410825B4824F001A41DF /* AccountCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F0410425B4824F001A41DF /* AccountCoordinator.swift */; };
+		D5F0410925B4824F001A41DF /* AccountHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F0410525B4824F001A41DF /* AccountHomeViewController.swift */; };
+		D5F0410A25B4824F001A41DF /* AccountHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F0410625B4824F001A41DF /* AccountHomeViewModel.swift */; };
+		D5F0410B25B4824F001A41DF /* AccountHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5F0410725B4824F001A41DF /* AccountHomeViewController.xib */; };
+		D5F0411325B482AD001A41DF /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F0411225B482AD001A41DF /* Coordinator.swift */; };
+		D5F0411B25B48322001A41DF /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F0411A25B48322001A41DF /* ViewModel.swift */; };
+		D5F0412025B483CC001A41DF /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F0411F25B483CC001A41DF /* NavigationController.swift */; };
+		D5F0412525B4847E001A41DF /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F0412425B4847E001A41DF /* TabBarController.swift */; };
+		D5F0413B25B48C20001A41DF /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F0413A25B48C20001A41DF /* API.swift */; };
+		D5F0414025B48C40001A41DF /* APIAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F0413F25B48C40001A41DF /* APIAccount.swift */; };
+		D5F0414525B48CF8001A41DF /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F0414425B48CF8001A41DF /* APIError.swift */; };
+		D5F0414C25B49DF3001A41DF /* MenuTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F0414B25B49DF3001A41DF /* MenuTableView.swift */; };
+		D5F0415225B49FAC001A41DF /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F0415125B49FAC001A41DF /* Menu.swift */; };
+		D5F0415725B4A075001A41DF /* MenuSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F0415625B4A075001A41DF /* MenuSection.swift */; };
+		D5F0415E25B4A191001A41DF /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F0415C25B4A191001A41DF /* ItemTableViewCell.swift */; };
+		D5F0415F25B4A191001A41DF /* ItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5F0415D25B4A191001A41DF /* ItemTableViewCell.xib */; };
+		D5F0416A25B4AE2E001A41DF /* BalanceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F0416825B4AE2E001A41DF /* BalanceTableViewCell.swift */; };
+		D5F0416B25B4AE2E001A41DF /* BalanceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5F0416925B4AE2E001A41DF /* BalanceTableViewCell.xib */; };
+		D5F0417325B4BDAA001A41DF /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F0417225B4BDAA001A41DF /* SearchController.swift */; };
+		D5F0417B25B4BFC2001A41DF /* ComingSoonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F0417825B4BFC2001A41DF /* ComingSoonViewController.swift */; };
+		D5F0417C25B4BFC2001A41DF /* ComingSoonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F0417925B4BFC2001A41DF /* ComingSoonViewModel.swift */; };
+		D5F0417D25B4BFC2001A41DF /* ComingSoonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5F0417A25B4BFC2001A41DF /* ComingSoonViewController.xib */; };
+		D87414F26190E00142ABB5D3 /* Pods_IGTIBank_IGTIBankUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 800CB6C498C4C2C2A3A1B421 /* Pods_IGTIBank_IGTIBankUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D5F040CF25B480B3001A41DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5F040B025B480B1001A41DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D5F040B725B480B1001A41DF;
+			remoteInfo = IGTIBank;
+		};
+		D5F040DA25B480B3001A41DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5F040B025B480B1001A41DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D5F040B725B480B1001A41DF;
+			remoteInfo = IGTIBank;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		14AA7692132F68C5A1FF113A /* Pods-IGTIBank-IGTIBankUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGTIBank-IGTIBankUITests.debug.xcconfig"; path = "Target Support Files/Pods-IGTIBank-IGTIBankUITests/Pods-IGTIBank-IGTIBankUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1F879C85E47A1145D7AD081A /* Pods_IGTIBankTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IGTIBankTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		30074C9E01C94C3AD84C14F5 /* Pods-IGTIBank-IGTIBankUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGTIBank-IGTIBankUITests.release.xcconfig"; path = "Target Support Files/Pods-IGTIBank-IGTIBankUITests/Pods-IGTIBank-IGTIBankUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4BEF6A3E5041DF693269F47D /* Pods_IGTIBank.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IGTIBank.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AC4D8B3B7AE49D41B4410B5 /* Pods-IGTIBank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGTIBank.release.xcconfig"; path = "Target Support Files/Pods-IGTIBank/Pods-IGTIBank.release.xcconfig"; sourceTree = "<group>"; };
+		800CB6C498C4C2C2A3A1B421 /* Pods_IGTIBank_IGTIBankUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IGTIBank_IGTIBankUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8805F492B1BE916223EFCF94 /* Pods-IGTIBankTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGTIBankTests.release.xcconfig"; path = "Target Support Files/Pods-IGTIBankTests/Pods-IGTIBankTests.release.xcconfig"; sourceTree = "<group>"; };
+		D5F040B825B480B1001A41DF /* IGTIBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IGTIBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5F040BB25B480B1001A41DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D5F040BD25B480B1001A41DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D5F040BF25B480B1001A41DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D5F040C425B480B3001A41DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D5F040C725B480B3001A41DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D5F040C925B480B3001A41DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5F040CE25B480B3001A41DF /* IGTIBankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IGTIBankTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5F040D225B480B3001A41DF /* IGTIBankTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGTIBankTests.swift; sourceTree = "<group>"; };
+		D5F040D425B480B3001A41DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5F040D925B480B3001A41DF /* IGTIBankUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IGTIBankUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5F040DD25B480B3001A41DF /* IGTIBankUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGTIBankUITests.swift; sourceTree = "<group>"; };
+		D5F040DF25B480B3001A41DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5F0410425B4824F001A41DF /* AccountCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCoordinator.swift; sourceTree = "<group>"; };
+		D5F0410525B4824F001A41DF /* AccountHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountHomeViewController.swift; sourceTree = "<group>"; };
+		D5F0410625B4824F001A41DF /* AccountHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountHomeViewModel.swift; sourceTree = "<group>"; };
+		D5F0410725B4824F001A41DF /* AccountHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountHomeViewController.xib; sourceTree = "<group>"; };
+		D5F0411225B482AD001A41DF /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		D5F0411A25B48322001A41DF /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		D5F0411F25B483CC001A41DF /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		D5F0412425B4847E001A41DF /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		D5F0413A25B48C20001A41DF /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		D5F0413F25B48C40001A41DF /* APIAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIAccount.swift; sourceTree = "<group>"; };
+		D5F0414425B48CF8001A41DF /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		D5F0414B25B49DF3001A41DF /* MenuTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableView.swift; sourceTree = "<group>"; };
+		D5F0415125B49FAC001A41DF /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		D5F0415625B4A075001A41DF /* MenuSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuSection.swift; sourceTree = "<group>"; };
+		D5F0415C25B4A191001A41DF /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		D5F0415D25B4A191001A41DF /* ItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemTableViewCell.xib; sourceTree = "<group>"; };
+		D5F0416825B4AE2E001A41DF /* BalanceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceTableViewCell.swift; sourceTree = "<group>"; };
+		D5F0416925B4AE2E001A41DF /* BalanceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BalanceTableViewCell.xib; sourceTree = "<group>"; };
+		D5F0417225B4BDAA001A41DF /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
+		D5F0417825B4BFC2001A41DF /* ComingSoonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingSoonViewController.swift; sourceTree = "<group>"; };
+		D5F0417925B4BFC2001A41DF /* ComingSoonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingSoonViewModel.swift; sourceTree = "<group>"; };
+		D5F0417A25B4BFC2001A41DF /* ComingSoonViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComingSoonViewController.xib; sourceTree = "<group>"; };
+		E8C4163F446E5E9F09283F1B /* Pods-IGTIBankTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGTIBankTests.debug.xcconfig"; path = "Target Support Files/Pods-IGTIBankTests/Pods-IGTIBankTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F827EF8EB1D613222AF6C165 /* Pods-IGTIBank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGTIBank.debug.xcconfig"; path = "Target Support Files/Pods-IGTIBank/Pods-IGTIBank.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D5F040B525B480B1001A41DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D03CC9B879FB2F757F9A900F /* Pods_IGTIBank.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5F040CB25B480B3001A41DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCED6F8D71572C7AAD3B0852 /* Pods_IGTIBankTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5F040D625B480B3001A41DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D87414F26190E00142ABB5D3 /* Pods_IGTIBank_IGTIBankUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A716FF9EF3459B336569884C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4BEF6A3E5041DF693269F47D /* Pods_IGTIBank.framework */,
+				800CB6C498C4C2C2A3A1B421 /* Pods_IGTIBank_IGTIBankUITests.framework */,
+				1F879C85E47A1145D7AD081A /* Pods_IGTIBankTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B67A720DEE0331601B83ACB8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F827EF8EB1D613222AF6C165 /* Pods-IGTIBank.debug.xcconfig */,
+				5AC4D8B3B7AE49D41B4410B5 /* Pods-IGTIBank.release.xcconfig */,
+				14AA7692132F68C5A1FF113A /* Pods-IGTIBank-IGTIBankUITests.debug.xcconfig */,
+				30074C9E01C94C3AD84C14F5 /* Pods-IGTIBank-IGTIBankUITests.release.xcconfig */,
+				E8C4163F446E5E9F09283F1B /* Pods-IGTIBankTests.debug.xcconfig */,
+				8805F492B1BE916223EFCF94 /* Pods-IGTIBankTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D5F040AF25B480B1001A41DF = {
+			isa = PBXGroup;
+			children = (
+				D5F040BA25B480B1001A41DF /* IGTIBank */,
+				D5F040D125B480B3001A41DF /* IGTIBankTests */,
+				D5F040DC25B480B3001A41DF /* IGTIBankUITests */,
+				D5F040B925B480B1001A41DF /* Products */,
+				B67A720DEE0331601B83ACB8 /* Pods */,
+				A716FF9EF3459B336569884C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D5F040B925B480B1001A41DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D5F040B825B480B1001A41DF /* IGTIBank.app */,
+				D5F040CE25B480B3001A41DF /* IGTIBankTests.xctest */,
+				D5F040D925B480B3001A41DF /* IGTIBankUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D5F040BA25B480B1001A41DF /* IGTIBank */ = {
+			isa = PBXGroup;
+			children = (
+				D5F040F425B48163001A41DF /* base */,
+				D5F0414925B49DC4001A41DF /* components */,
+				D5F0413925B48BFD001A41DF /* api */,
+				D5F0410125B481DE001A41DF /* modules */,
+				D5F0415025B49F9C001A41DF /* models */,
+			);
+			path = IGTIBank;
+			sourceTree = "<group>";
+		};
+		D5F040D125B480B3001A41DF /* IGTIBankTests */ = {
+			isa = PBXGroup;
+			children = (
+				D5F040D225B480B3001A41DF /* IGTIBankTests.swift */,
+				D5F040D425B480B3001A41DF /* Info.plist */,
+			);
+			path = IGTIBankTests;
+			sourceTree = "<group>";
+		};
+		D5F040DC25B480B3001A41DF /* IGTIBankUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D5F040DD25B480B3001A41DF /* IGTIBankUITests.swift */,
+				D5F040DF25B480B3001A41DF /* Info.plist */,
+			);
+			path = IGTIBankUITests;
+			sourceTree = "<group>";
+		};
+		D5F040F425B48163001A41DF /* base */ = {
+			isa = PBXGroup;
+			children = (
+				D5F040BB25B480B1001A41DF /* AppDelegate.swift */,
+				D5F040BD25B480B1001A41DF /* SceneDelegate.swift */,
+				D5F0412425B4847E001A41DF /* TabBarController.swift */,
+				D5F0411F25B483CC001A41DF /* NavigationController.swift */,
+				D5F040BF25B480B1001A41DF /* ViewController.swift */,
+				D5F0411225B482AD001A41DF /* Coordinator.swift */,
+				D5F0411A25B48322001A41DF /* ViewModel.swift */,
+				D5F0417225B4BDAA001A41DF /* SearchController.swift */,
+				D5F040C425B480B3001A41DF /* Assets.xcassets */,
+				D5F040C625B480B3001A41DF /* LaunchScreen.storyboard */,
+				D5F040C925B480B3001A41DF /* Info.plist */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
+		D5F0410125B481DE001A41DF /* modules */ = {
+			isa = PBXGroup;
+			children = (
+				D5F0410225B481EB001A41DF /* Account */,
+			);
+			path = modules;
+			sourceTree = "<group>";
+		};
+		D5F0410225B481EB001A41DF /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				D5F0410425B4824F001A41DF /* AccountCoordinator.swift */,
+				D5F0410325B481FA001A41DF /* Home */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		D5F0410325B481FA001A41DF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D5F0410525B4824F001A41DF /* AccountHomeViewController.swift */,
+				D5F0410625B4824F001A41DF /* AccountHomeViewModel.swift */,
+				D5F0410725B4824F001A41DF /* AccountHomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D5F0413925B48BFD001A41DF /* api */ = {
+			isa = PBXGroup;
+			children = (
+				D5F0413A25B48C20001A41DF /* API.swift */,
+				D5F0414425B48CF8001A41DF /* APIError.swift */,
+				D5F0413F25B48C40001A41DF /* APIAccount.swift */,
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
+		D5F0414925B49DC4001A41DF /* components */ = {
+			isa = PBXGroup;
+			children = (
+				D5F0417725B4BF9A001A41DF /* viewControllers */,
+				D5F0415B25B4A17A001A41DF /* cells */,
+				D5F0414A25B49DD0001A41DF /* tableView */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		D5F0414A25B49DD0001A41DF /* tableView */ = {
+			isa = PBXGroup;
+			children = (
+				D5F0414B25B49DF3001A41DF /* MenuTableView.swift */,
+			);
+			path = tableView;
+			sourceTree = "<group>";
+		};
+		D5F0415025B49F9C001A41DF /* models */ = {
+			isa = PBXGroup;
+			children = (
+				D5F0415125B49FAC001A41DF /* Menu.swift */,
+				D5F0415625B4A075001A41DF /* MenuSection.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		D5F0415B25B4A17A001A41DF /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				D5F0416725B4AE1E001A41DF /* Balance */,
+				D5F0416625B4AE14001A41DF /* Item */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		D5F0416625B4AE14001A41DF /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				D5F0415C25B4A191001A41DF /* ItemTableViewCell.swift */,
+				D5F0415D25B4A191001A41DF /* ItemTableViewCell.xib */,
+			);
+			path = Item;
+			sourceTree = "<group>";
+		};
+		D5F0416725B4AE1E001A41DF /* Balance */ = {
+			isa = PBXGroup;
+			children = (
+				D5F0416825B4AE2E001A41DF /* BalanceTableViewCell.swift */,
+				D5F0416925B4AE2E001A41DF /* BalanceTableViewCell.xib */,
+			);
+			path = Balance;
+			sourceTree = "<group>";
+		};
+		D5F0417725B4BF9A001A41DF /* viewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D5F0417925B4BFC2001A41DF /* ComingSoonViewModel.swift */,
+				D5F0417825B4BFC2001A41DF /* ComingSoonViewController.swift */,
+				D5F0417A25B4BFC2001A41DF /* ComingSoonViewController.xib */,
+			);
+			path = viewControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D5F040B725B480B1001A41DF /* IGTIBank */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5F040E225B480B3001A41DF /* Build configuration list for PBXNativeTarget "IGTIBank" */;
+			buildPhases = (
+				566417D2CBA89747E743FC18 /* [CP] Check Pods Manifest.lock */,
+				D5F040B425B480B1001A41DF /* Sources */,
+				D5F040B525B480B1001A41DF /* Frameworks */,
+				D5F040B625B480B1001A41DF /* Resources */,
+				EF326D8288A32EEFA002C1A3 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IGTIBank;
+			productName = IGTIBank;
+			productReference = D5F040B825B480B1001A41DF /* IGTIBank.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D5F040CD25B480B3001A41DF /* IGTIBankTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5F040E525B480B3001A41DF /* Build configuration list for PBXNativeTarget "IGTIBankTests" */;
+			buildPhases = (
+				C6EF39E58A4478DFC66A3D04 /* [CP] Check Pods Manifest.lock */,
+				D5F040CA25B480B3001A41DF /* Sources */,
+				D5F040CB25B480B3001A41DF /* Frameworks */,
+				D5F040CC25B480B3001A41DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D5F040D025B480B3001A41DF /* PBXTargetDependency */,
+			);
+			name = IGTIBankTests;
+			productName = IGTIBankTests;
+			productReference = D5F040CE25B480B3001A41DF /* IGTIBankTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D5F040D825B480B3001A41DF /* IGTIBankUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5F040E825B480B3001A41DF /* Build configuration list for PBXNativeTarget "IGTIBankUITests" */;
+			buildPhases = (
+				4C03665F587B5BDA8D708336 /* [CP] Check Pods Manifest.lock */,
+				D5F040D525B480B3001A41DF /* Sources */,
+				D5F040D625B480B3001A41DF /* Frameworks */,
+				D5F040D725B480B3001A41DF /* Resources */,
+				AB48830D53845719A57239E8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D5F040DB25B480B3001A41DF /* PBXTargetDependency */,
+			);
+			name = IGTIBankUITests;
+			productName = IGTIBankUITests;
+			productReference = D5F040D925B480B3001A41DF /* IGTIBankUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D5F040B025B480B1001A41DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					D5F040B725B480B1001A41DF = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					D5F040CD25B480B3001A41DF = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = D5F040B725B480B1001A41DF;
+					};
+					D5F040D825B480B3001A41DF = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = D5F040B725B480B1001A41DF;
+					};
+				};
+			};
+			buildConfigurationList = D5F040B325B480B1001A41DF /* Build configuration list for PBXProject "IGTIBank" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D5F040AF25B480B1001A41DF;
+			productRefGroup = D5F040B925B480B1001A41DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D5F040B725B480B1001A41DF /* IGTIBank */,
+				D5F040CD25B480B3001A41DF /* IGTIBankTests */,
+				D5F040D825B480B3001A41DF /* IGTIBankUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D5F040B625B480B1001A41DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5F0415F25B4A191001A41DF /* ItemTableViewCell.xib in Resources */,
+				D5F040C825B480B3001A41DF /* LaunchScreen.storyboard in Resources */,
+				D5F0417D25B4BFC2001A41DF /* ComingSoonViewController.xib in Resources */,
+				D5F040C525B480B3001A41DF /* Assets.xcassets in Resources */,
+				D5F0416B25B4AE2E001A41DF /* BalanceTableViewCell.xib in Resources */,
+				D5F0410B25B4824F001A41DF /* AccountHomeViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5F040CC25B480B3001A41DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5F040D725B480B3001A41DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4C03665F587B5BDA8D708336 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IGTIBank-IGTIBankUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		566417D2CBA89747E743FC18 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IGTIBank-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB48830D53845719A57239E8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IGTIBank-IGTIBankUITests/Pods-IGTIBank-IGTIBankUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IGTIBank-IGTIBankUITests/Pods-IGTIBank-IGTIBankUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IGTIBank-IGTIBankUITests/Pods-IGTIBank-IGTIBankUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6EF39E58A4478DFC66A3D04 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IGTIBankTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF326D8288A32EEFA002C1A3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IGTIBank/Pods-IGTIBank-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IGTIBank/Pods-IGTIBank-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IGTIBank/Pods-IGTIBank-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D5F040B425B480B1001A41DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5F0413B25B48C20001A41DF /* API.swift in Sources */,
+				D5F040C025B480B1001A41DF /* ViewController.swift in Sources */,
+				D5F0417325B4BDAA001A41DF /* SearchController.swift in Sources */,
+				D5F0410925B4824F001A41DF /* AccountHomeViewController.swift in Sources */,
+				D5F0410825B4824F001A41DF /* AccountCoordinator.swift in Sources */,
+				D5F0417C25B4BFC2001A41DF /* ComingSoonViewModel.swift in Sources */,
+				D5F0414C25B49DF3001A41DF /* MenuTableView.swift in Sources */,
+				D5F0412525B4847E001A41DF /* TabBarController.swift in Sources */,
+				D5F0415725B4A075001A41DF /* MenuSection.swift in Sources */,
+				D5F0417B25B4BFC2001A41DF /* ComingSoonViewController.swift in Sources */,
+				D5F0410A25B4824F001A41DF /* AccountHomeViewModel.swift in Sources */,
+				D5F0416A25B4AE2E001A41DF /* BalanceTableViewCell.swift in Sources */,
+				D5F0414025B48C40001A41DF /* APIAccount.swift in Sources */,
+				D5F0412025B483CC001A41DF /* NavigationController.swift in Sources */,
+				D5F0415225B49FAC001A41DF /* Menu.swift in Sources */,
+				D5F040BC25B480B1001A41DF /* AppDelegate.swift in Sources */,
+				D5F040BE25B480B1001A41DF /* SceneDelegate.swift in Sources */,
+				D5F0411B25B48322001A41DF /* ViewModel.swift in Sources */,
+				D5F0411325B482AD001A41DF /* Coordinator.swift in Sources */,
+				D5F0415E25B4A191001A41DF /* ItemTableViewCell.swift in Sources */,
+				D5F0414525B48CF8001A41DF /* APIError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5F040CA25B480B3001A41DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5F040D325B480B3001A41DF /* IGTIBankTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5F040D525B480B3001A41DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5F040DE25B480B3001A41DF /* IGTIBankUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D5F040D025B480B3001A41DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D5F040B725B480B1001A41DF /* IGTIBank */;
+			targetProxy = D5F040CF25B480B3001A41DF /* PBXContainerItemProxy */;
+		};
+		D5F040DB25B480B3001A41DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D5F040B725B480B1001A41DF /* IGTIBank */;
+			targetProxy = D5F040DA25B480B3001A41DF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D5F040C625B480B3001A41DF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5F040C725B480B3001A41DF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D5F040E025B480B3001A41DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D5F040E125B480B3001A41DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D5F040E325B480B3001A41DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F827EF8EB1D613222AF6C165 /* Pods-IGTIBank.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3NYDB9XX8E;
+				INFOPLIST_FILE = IGTIBank/base/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.openmindhouse.IGTIBank;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D5F040E425B480B3001A41DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AC4D8B3B7AE49D41B4410B5 /* Pods-IGTIBank.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3NYDB9XX8E;
+				INFOPLIST_FILE = IGTIBank/base/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.openmindhouse.IGTIBank;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D5F040E625B480B3001A41DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8C4163F446E5E9F09283F1B /* Pods-IGTIBankTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3NYDB9XX8E;
+				INFOPLIST_FILE = IGTIBankTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.openmindhouse.IGTIBankTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IGTIBank.app/IGTIBank";
+			};
+			name = Debug;
+		};
+		D5F040E725B480B3001A41DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8805F492B1BE916223EFCF94 /* Pods-IGTIBankTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3NYDB9XX8E;
+				INFOPLIST_FILE = IGTIBankTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.openmindhouse.IGTIBankTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IGTIBank.app/IGTIBank";
+			};
+			name = Release;
+		};
+		D5F040E925B480B3001A41DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14AA7692132F68C5A1FF113A /* Pods-IGTIBank-IGTIBankUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3NYDB9XX8E;
+				INFOPLIST_FILE = IGTIBankUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.openmindhouse.IGTIBankUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IGTIBank;
+			};
+			name = Debug;
+		};
+		D5F040EA25B480B3001A41DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30074C9E01C94C3AD84C14F5 /* Pods-IGTIBank-IGTIBankUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3NYDB9XX8E;
+				INFOPLIST_FILE = IGTIBankUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.openmindhouse.IGTIBankUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IGTIBank;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D5F040B325B480B1001A41DF /* Build configuration list for PBXProject "IGTIBank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5F040E025B480B3001A41DF /* Debug */,
+				D5F040E125B480B3001A41DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5F040E225B480B3001A41DF /* Build configuration list for PBXNativeTarget "IGTIBank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5F040E325B480B3001A41DF /* Debug */,
+				D5F040E425B480B3001A41DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5F040E525B480B3001A41DF /* Build configuration list for PBXNativeTarget "IGTIBankTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5F040E625B480B3001A41DF /* Debug */,
+				D5F040E725B480B3001A41DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5F040E825B480B3001A41DF /* Build configuration list for PBXNativeTarget "IGTIBankUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5F040E925B480B3001A41DF /* Debug */,
+				D5F040EA25B480B3001A41DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D5F040B025B480B1001A41DF /* Project object */;
+}

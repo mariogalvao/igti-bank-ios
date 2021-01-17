@@ -1,0 +1,16 @@
+PODS:
+  - OpenAPIClient (1.0.0)
+
+DEPENDENCIES:
+  - OpenAPIClient (from `./IGTIBankAPI`)
+
+EXTERNAL SOURCES:
+  OpenAPIClient:
+    :path: "./IGTIBankAPI"
+
+SPEC CHECKSUMS:
+  OpenAPIClient: 9463e074f7c19fecf6c3f9c0e565dd58aab45aa5
+
+PODFILE CHECKSUM: 1e6c190ebbfbaa84a44caf3e9fa7c019d6cfc6f0
+
+COCOAPODS: 1.9.3
