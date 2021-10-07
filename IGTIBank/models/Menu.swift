@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import OpenAPIClient
 
 class Menu: NSObject {
     
@@ -65,6 +66,30 @@ class Menu: NSObject {
                                         title: "Bloquear",
                                         details: "Em caso de perda ou roubo, faça o bloqueio do seu cartão."))
         return transactions
+    }
+    
+    static func getMyInvestMenus(for myInvestments: [MyInvestment]) -> [Menu] {
+        var menus: [Menu] = []
+        myInvestments.forEach { (myInvestment) in
+            let menu = Menu(type: .invest,
+                            icon: UIImage(systemName: myInvestment.iOSImage),
+                            title: myInvestment.name,
+                            details: myInvestment.balanceString)
+            menus.append(menu)
+        }
+        return menus
+    }
+    
+    static func getInvestMenus(for investments: [Investment]) -> [Menu] {
+        var menus: [Menu] = []
+        investments.forEach { (myInvestment) in
+            let menu = Menu(type: .invest,
+                            icon: UIImage(systemName: myInvestment.iOSImage),
+                            title: myInvestment.name,
+                            details: myInvestment.description)
+            menus.append(menu)
+        }
+        return menus
     }
 
 }

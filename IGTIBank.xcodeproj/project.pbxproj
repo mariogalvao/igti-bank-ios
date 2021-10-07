@@ -9,6 +9,15 @@
 /* Begin PBXBuildFile section */
 		BCED6F8D71572C7AAD3B0852 /* Pods_IGTIBankTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F879C85E47A1145D7AD081A /* Pods_IGTIBankTests.framework */; };
 		D03CC9B879FB2F757F9A900F /* Pods_IGTIBank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BEF6A3E5041DF693269F47D /* Pods_IGTIBank.framework */; };
+		D5818F3B25C5959400340C4D /* InvestCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5818F3725C5959400340C4D /* InvestCoordinator.swift */; };
+		D5818F3C25C5959400340C4D /* InvestHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5818F3825C5959400340C4D /* InvestHomeViewController.swift */; };
+		D5818F3D25C5959400340C4D /* InvestHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5818F3925C5959400340C4D /* InvestHomeViewModel.swift */; };
+		D5818F3E25C5959400340C4D /* InvestHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5818F3A25C5959400340C4D /* InvestHomeViewController.xib */; };
+		D5818F4925C599B100340C4D /* APIInvest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5818F4825C599B100340C4D /* APIInvest.swift */; };
+		D5818F5325C5B79200340C4D /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5818F4F25C5B79200340C4D /* ProfileCoordinator.swift */; };
+		D5818F5425C5B79200340C4D /* ProfileHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5818F5025C5B79200340C4D /* ProfileHomeViewController.swift */; };
+		D5818F5525C5B79200340C4D /* ProfileHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5818F5125C5B79200340C4D /* ProfileHomeViewModel.swift */; };
+		D5818F5625C5B79200340C4D /* ProfileHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5818F5225C5B79200340C4D /* ProfileHomeViewController.xib */; };
 		D5CE8BA725B4D43B0041CAAF /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CE8BA525B4D43B0041CAAF /* CardCollectionViewCell.swift */; };
 		D5CE8BA825B4D43B0041CAAF /* CardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5CE8BA625B4D43B0041CAAF /* CardCollectionViewCell.xib */; };
 		D5CE8BB025B4E9BB0041CAAF /* APICards.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CE8BAF25B4E9BB0041CAAF /* APICards.swift */; };
@@ -75,6 +84,15 @@
 		5AC4D8B3B7AE49D41B4410B5 /* Pods-IGTIBank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGTIBank.release.xcconfig"; path = "Target Support Files/Pods-IGTIBank/Pods-IGTIBank.release.xcconfig"; sourceTree = "<group>"; };
 		800CB6C498C4C2C2A3A1B421 /* Pods_IGTIBank_IGTIBankUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IGTIBank_IGTIBankUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8805F492B1BE916223EFCF94 /* Pods-IGTIBankTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGTIBankTests.release.xcconfig"; path = "Target Support Files/Pods-IGTIBankTests/Pods-IGTIBankTests.release.xcconfig"; sourceTree = "<group>"; };
+		D5818F3725C5959400340C4D /* InvestCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestCoordinator.swift; sourceTree = "<group>"; };
+		D5818F3825C5959400340C4D /* InvestHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestHomeViewController.swift; sourceTree = "<group>"; };
+		D5818F3925C5959400340C4D /* InvestHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestHomeViewModel.swift; sourceTree = "<group>"; };
+		D5818F3A25C5959400340C4D /* InvestHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InvestHomeViewController.xib; sourceTree = "<group>"; };
+		D5818F4825C599B100340C4D /* APIInvest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIInvest.swift; sourceTree = "<group>"; };
+		D5818F4F25C5B79200340C4D /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
+		D5818F5025C5B79200340C4D /* ProfileHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHomeViewController.swift; sourceTree = "<group>"; };
+		D5818F5125C5B79200340C4D /* ProfileHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHomeViewModel.swift; sourceTree = "<group>"; };
+		D5818F5225C5B79200340C4D /* ProfileHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileHomeViewController.xib; sourceTree = "<group>"; };
 		D5CE8BA525B4D43B0041CAAF /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
 		D5CE8BA625B4D43B0041CAAF /* CardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCollectionViewCell.xib; sourceTree = "<group>"; };
 		D5CE8BAF25B4E9BB0041CAAF /* APICards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICards.swift; sourceTree = "<group>"; };
@@ -174,6 +192,44 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		D5818F3525C5956200340C4D /* Investments */ = {
+			isa = PBXGroup;
+			children = (
+				D5818F3725C5959400340C4D /* InvestCoordinator.swift */,
+				D5818F3625C5957400340C4D /* Home */,
+			);
+			path = Investments;
+			sourceTree = "<group>";
+		};
+		D5818F3625C5957400340C4D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D5818F3825C5959400340C4D /* InvestHomeViewController.swift */,
+				D5818F3925C5959400340C4D /* InvestHomeViewModel.swift */,
+				D5818F3A25C5959400340C4D /* InvestHomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D5818F4D25C5B76700340C4D /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				D5818F4F25C5B79200340C4D /* ProfileCoordinator.swift */,
+				D5818F4E25C5B77300340C4D /* Home */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		D5818F4E25C5B77300340C4D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D5818F5025C5B79200340C4D /* ProfileHomeViewController.swift */,
+				D5818F5125C5B79200340C4D /* ProfileHomeViewModel.swift */,
+				D5818F5225C5B79200340C4D /* ProfileHomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		D5CE8BA425B4D3FF0041CAAF /* Card */ = {
 			isa = PBXGroup;
 			children = (
@@ -267,6 +323,8 @@
 			children = (
 				D5F0410225B481EB001A41DF /* Account */,
 				D5F0419A25B4D06D001A41DF /* Cards */,
+				D5818F3525C5956200340C4D /* Investments */,
+				D5818F4D25C5B76700340C4D /* Profile */,
 			);
 			path = modules;
 			sourceTree = "<group>";
@@ -297,6 +355,7 @@
 				D5F0414425B48CF8001A41DF /* APIError.swift */,
 				D5F0413F25B48C40001A41DF /* APIAccount.swift */,
 				D5CE8BAF25B4E9BB0041CAAF /* APICards.swift */,
+				D5818F4825C599B100340C4D /* APIInvest.swift */,
 			);
 			path = api;
 			sourceTree = "<group>";
@@ -496,6 +555,7 @@
 			files = (
 				D5F0415F25B4A191001A41DF /* ItemTableViewCell.xib in Resources */,
 				D5F040C825B480B3001A41DF /* LaunchScreen.storyboard in Resources */,
+				D5818F3E25C5959400340C4D /* InvestHomeViewController.xib in Resources */,
 				D5CE8BC625B4F2120041CAAF /* CardInfoTableViewCell.xib in Resources */,
 				D5F0417D25B4BFC2001A41DF /* ComingSoonViewController.xib in Resources */,
 				D5F040C525B480B3001A41DF /* Assets.xcassets in Resources */,
@@ -503,6 +563,7 @@
 				D5F041A225B4D093001A41DF /* CardsHomeViewController.xib in Resources */,
 				D5F0416B25B4AE2E001A41DF /* BalanceTableViewCell.xib in Resources */,
 				D5F0410B25B4824F001A41DF /* AccountHomeViewController.xib in Resources */,
+				D5818F5625C5B79200340C4D /* ProfileHomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -631,23 +692,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5F0413B25B48C20001A41DF /* API.swift in Sources */,
+				D5818F5525C5B79200340C4D /* ProfileHomeViewModel.swift in Sources */,
+				D5818F4925C599B100340C4D /* APIInvest.swift in Sources */,
 				D5F040C025B480B1001A41DF /* ViewController.swift in Sources */,
 				D5F0417325B4BDAA001A41DF /* SearchController.swift in Sources */,
 				D5F041A025B4D093001A41DF /* CardsHomeViewController.swift in Sources */,
 				D5F0410925B4824F001A41DF /* AccountHomeViewController.swift in Sources */,
+				D5818F3C25C5959400340C4D /* InvestHomeViewController.swift in Sources */,
 				D5F0410825B4824F001A41DF /* AccountCoordinator.swift in Sources */,
 				D5F0417C25B4BFC2001A41DF /* ComingSoonViewModel.swift in Sources */,
 				D5F0414C25B49DF3001A41DF /* MenuTableView.swift in Sources */,
+				D5818F3B25C5959400340C4D /* InvestCoordinator.swift in Sources */,
 				D5F0412525B4847E001A41DF /* TabBarController.swift in Sources */,
 				D5F0415725B4A075001A41DF /* MenuSection.swift in Sources */,
 				D5F0419F25B4D093001A41DF /* CardsCoordinator.swift in Sources */,
 				D5F0417B25B4BFC2001A41DF /* ComingSoonViewController.swift in Sources */,
 				D5F0410A25B4824F001A41DF /* AccountHomeViewModel.swift in Sources */,
 				D5CE8BC525B4F2120041CAAF /* CardInfoTableViewCell.swift in Sources */,
+				D5818F5425C5B79200340C4D /* ProfileHomeViewController.swift in Sources */,
 				D5CE8BA725B4D43B0041CAAF /* CardCollectionViewCell.swift in Sources */,
 				D5F041A125B4D093001A41DF /* CardsHomeViewModel.swift in Sources */,
 				D5F0416A25B4AE2E001A41DF /* BalanceTableViewCell.swift in Sources */,
 				D5F0414025B48C40001A41DF /* APIAccount.swift in Sources */,
+				D5818F5325C5B79200340C4D /* ProfileCoordinator.swift in Sources */,
 				D5F0412025B483CC001A41DF /* NavigationController.swift in Sources */,
 				D5F0415225B49FAC001A41DF /* Menu.swift in Sources */,
 				D5F040BC25B480B1001A41DF /* AppDelegate.swift in Sources */,
@@ -656,6 +723,7 @@
 				D5F0411325B482AD001A41DF /* Coordinator.swift in Sources */,
 				D5F0415E25B4A191001A41DF /* ItemTableViewCell.swift in Sources */,
 				D5CE8BB025B4E9BB0041CAAF /* APICards.swift in Sources */,
+				D5818F3D25C5959400340C4D /* InvestHomeViewModel.swift in Sources */,
 				D5F0414525B48CF8001A41DF /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

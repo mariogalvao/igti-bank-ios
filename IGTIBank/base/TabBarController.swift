@@ -12,7 +12,7 @@ class TabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        viewControllers = [account(), cards()]
+        viewControllers = [account(), cards(), investments(), profile()]
     }
     
     private func account() -> NavigationController {
@@ -22,6 +22,16 @@ class TabBarController: UITabBarController {
     
     private func cards() -> NavigationController {
         let coordinator = CardsCoordinator()
+        return coordinator.firstViewController()
+    }
+    
+    private func investments() -> NavigationController {
+        let coordinator = InvestCoordinator()
+        return coordinator.firstViewController()
+    }
+    
+    private func profile() -> NavigationController {
+        let coordinator = ProfileCoordinator()
         return coordinator.firstViewController()
     }
     
